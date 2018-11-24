@@ -5,7 +5,7 @@ import './ContrastSwatch.scss';
 
 const ContrastSwatch = ({ foregroundColor, backgroundColor }) => (
   <div className="contrast-swatch">
-    <div class="contrast-swatch__grade">
+    <div className="contrast-swatch__grade">
       {contrast.isAccessible(foregroundColor, backgroundColor) ? '✅' : '❌'}
     </div>
 
