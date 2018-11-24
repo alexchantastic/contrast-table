@@ -14,7 +14,7 @@ const ContrastSwatch = ({ foregroundColor, backgroundColor }) => (
     </div>
 
     <div className="contrast-swatch__ratio">
-      {contrast.ratio(foregroundColor, backgroundColor).toFixed(2)}
+      {contrast.ratio(foregroundColor, backgroundColor).toFixed(2)} ({contrast.score(foregroundColor, backgroundColor)})
     </div>
   </div>
 );
