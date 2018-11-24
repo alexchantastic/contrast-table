@@ -2,30 +2,29 @@
   table-layout: fixed;
   border-collapse: collapse;
 
-  th,
-  td {
+  &__column-header {
     padding: 16px;
+    font-weight: normal;
     border-right: 1px solid #eee;
+    border-bottom: 1px solid #ccc;
+
+    &--empty {
+      border-right-color: #ccc;
+    }
+  }
+
+  &__row-header {
+    padding: 16px;
+    border-right: 1px solid #ccc;
     border-bottom: 1px solid #eee;
   }
 
-  th {
-    font-weight: normal;
-    border-bottom-color: #ccc;
-  }
+  &__cell {
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 
-  th:first-child,
-  td:first-child {
-    border-right-color: #ccc;
-  }
-
-  td {
     &:hover {
       background: #f3f3f3;
-    }
-
-    &:first-child:hover {
-      background: none;
     }
   }
 }

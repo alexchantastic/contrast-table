@@ -1,15 +1,32 @@
 .contrast-swatch {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 128px;
-  height: 64px;
+  width: 160px;
+  height: 96px;
   text-align: center;
 
   &__ratio {
     margin-top: 4px;
     font-family: 'Consolas', 'Monaco', Courier, monospace;
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  &__sample {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: none;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  &:hover {
+    .contrast-swatch__sample {
+      display: block;
+    }
   }
 }

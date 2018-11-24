@@ -8,9 +8,9 @@ import './Table.scss';
 const Table = ({ palette }) => (
   <table className="table">
     <thead>
-      <th></th>
+      <th className="table__column-header table__column-header--empty"></th>
       {palette.map((swatch) => (
-        <th>
+        <th className="table__column-header">
           <Swatch color={swatch} />
         </th>
       ))}
@@ -26,10 +26,10 @@ const Table = ({ palette }) => (
 
 const TableRow = ({ swatch, palette }) => (
   <tr>
-    <td><Swatch color={swatch} /></td>
+    <td className="table__row-header"><Swatch color={swatch} /></td>
 
     {palette.map((columnSwatch) => (
-      <td>
+      <td className="table__cell">
         <ContrastSwatch foregroundColor={columnSwatch} backgroundColor={swatch} />
       </td>
     ))}
