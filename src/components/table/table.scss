@@ -3,25 +3,38 @@
   border-collapse: collapse;
 
   &__column-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
     padding: 16px;
     font-weight: normal;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #ccc;
+    box-shadow:
+      inset 0 -1px 0 0 #ccc,
+      inset -1px 0 0 0 #eee;
+    background: #fff;
 
     &--empty {
-      border-right-color: #ccc;
+      box-shadow:
+        inset 0 -1px 0 0 #ccc,
+        inset -1px 0 0 0 #ccc;
     }
   }
 
   &__row-header {
+    position: sticky;
+    left: 0;
+    z-index: 1;
     padding: 16px;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #eee;
+    box-shadow:
+      inset 0 -1px 0 0 #eee,
+      inset -1px 0 0 0 #ccc;
+    background: #fff;
   }
 
   &__cell {
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    box-shadow:
+      inset 0 -1px 0 0 #eee,
+      inset -1px 0 0 0 #eee;
 
     &:hover {
       background: #f3f3f3;
