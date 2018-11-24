@@ -23,5 +23,9 @@
     &:hover {
       background: #f3f3f3;
     }
+
+    &:first-child:hover {
+      background: none;
+    }
   }
 }

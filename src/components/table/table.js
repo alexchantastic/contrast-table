@@ -11,7 +11,7 @@ const Table = ({ palette }) => (
       <th></th>
       {palette.map((swatch) => (
         <th>
-          <Swatch foregroundColor={swatch} backgroundColor={swatch} />
+          <Swatch color={swatch} />
         </th>
       ))}
     </thead>
@@ -26,7 +26,7 @@ const Table = ({ palette }) => (
 
 const TableRow = ({ swatch, palette }) => (
   <tr>
-    <td><Swatch foregroundColor={swatch} backgroundColor={swatch} /></td>
+    <td><Swatch color={swatch} /></td>
 
     {palette.map((columnSwatch) => (
       <td>
