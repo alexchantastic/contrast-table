@@ -4931,7 +4931,7 @@ is-glob@^4.0.0:
   dependencies:
     is-extglob "^2.1.1"
 
-is-named-css-color@1.0.0:
+is-named-css-color@1.0.0, is-named-css-color@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-named-css-color/-/is-named-css-color-1.0.0.tgz#3b5f89bdc4a515ff4ed25714ffc64129a25599b7"
   integrity sha1-O1+JvcSlFf9O0lcU/8ZBKaJVmbc=

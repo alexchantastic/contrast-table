@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "get-contrast": "^2.0.0",
+    "is-named-css-color": "^1.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "rgb": "^0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
