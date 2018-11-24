@@ -34,8 +34,8 @@ class App extends Component {
       this.palette = [
         'white',
         'black',
-        'rgb(100, 100, 100)',
-        'rgba(200, 200, 200, 0.5)',
+        'rgb(100,100,100)',
+        'rgba(200,200,200,0.5)',
         '#ef5350',
         '#ec407a',
         '#ab47bc',
@@ -57,6 +57,8 @@ class App extends Component {
         '#78909c',
       ];
     }
+
+    window.history.pushState(null, null, window.location.origin + '/?' + this.palette.join(','));
 
     console.log(this.palette);
   }
