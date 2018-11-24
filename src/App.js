@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Table from './components/table/table';
+import Table from './components/Table/Table';
 
 import './App.scss';
 

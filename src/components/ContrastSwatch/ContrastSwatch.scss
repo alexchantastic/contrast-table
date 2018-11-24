@@ -1,0 +1,15 @@
+.contrast-swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 64px;
+  text-align: center;
+
+  &__ratio {
+    margin-top: 4px;
+    font-family: 'Consolas', 'Monaco', Courier, monospace;
+    font-size: 14px;
+  }
+}

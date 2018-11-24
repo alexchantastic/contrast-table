@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import Swatch from '../swatch/swatch';
+import Swatch from '../Swatch/Swatch';
+import ContrastSwatch from '../ContrastSwatch/ContrastSwatch';
 
-import './table.scss';
+import './Table.scss';
 
 const Table = ({ palette }) => (
   <table className="table">
@@ -27,9 +28,9 @@ const TableRow = ({ swatch, palette }) => (
   <tr>
     <td><Swatch foregroundColor={swatch} backgroundColor={swatch} /></td>
 
-    {palette.map((swatch) => (
+    {palette.map((columnSwatch) => (
       <td>
-        <Swatch foregroundColor={swatch} backgroundColor={swatch} />
+        <ContrastSwatch foregroundColor={columnSwatch} backgroundColor={swatch} />
       </td>
     ))}
   </tr>

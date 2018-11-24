@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './swatch.scss';
+import './Swatch.scss';
 
 const Swatch = ({ foregroundColor, backgroundColor }) => (
   <div className="swatch" style={{background: backgroundColor}}>

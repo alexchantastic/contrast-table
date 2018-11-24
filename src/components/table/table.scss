@@ -2,7 +2,26 @@
   table-layout: fixed;
   border-collapse: collapse;
 
+  th,
+  td {
+    padding: 16px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
   th {
     font-weight: normal;
+    border-bottom-color: #ccc;
+  }
+
+  th:first-child,
+  td:first-child {
+    border-right-color: #ccc;
+  }
+
+  td {
+    &:hover {
+      background: #f3f3f3;
+    }
   }
 }
