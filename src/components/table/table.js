@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Swatch from '../Swatch/Swatch';
 import ContrastSwatch from '../ContrastSwatch/ContrastSwatch';
