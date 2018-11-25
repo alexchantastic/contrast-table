@@ -15,7 +15,7 @@ class App extends Component {
 
   componentWillMount() {
     let urlPalette = window.location.href
-      .replace(window.location.origin + '/?', '') // Trim URL
+      .replace(window.location.origin + window.location.pathname + '?', '') // Trim URL
       .replace(/\s/g, '') // Trim whitespace
       .replace(/%20/g, '') // Trim escaped whitespace
       .replace(/(,)(\d)/g, '|$2') // Use '|' as a placeholder for ',' in rgb and rgba definitions
@@ -58,7 +58,7 @@ class App extends Component {
       ];
     }
 
-    window.history.pushState(null, null, window.location.origin + '/?' + this.palette.join(','));
+    window.history.pushState(null, null, window.location.origin + window.location.pathname + '?' + this.palette.join(','));
   }
 
   render() {
