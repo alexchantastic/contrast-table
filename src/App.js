@@ -4,8 +4,6 @@ import isCSSColorName from 'is-css-color-name';
 
 import Table from './components/Table/Table';
 
-import './App.scss';
-
 class App extends Component {
   cleanPalette = (palette) => {
     return palette.filter((swatch) => {
@@ -63,7 +61,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         <Table palette={this.palette} />
       </div>
     );
