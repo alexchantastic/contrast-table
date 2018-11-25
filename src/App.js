@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import color from 'rgb';
-import isNamedCssColor from 'is-named-css-color';
+import isCSSColorName from 'is-css-color-name';
 
 import Table from './components/Table/Table';
 
@@ -9,17 +9,17 @@ import './App.scss';
 class App extends Component {
   cleanPalette = (palette) => {
     return palette.filter((swatch) => {
-      return color(swatch) || isNamedCssColor(swatch);
+      return swatch.match(/^#|^rgb/) ? color(swatch) : isCSSColorName(swatch);
     });
   }
 
   componentWillMount() {
-    let urlPalette = window.location.search ? window.location.href
+    let urlPalette = window.location.href
       .replace(window.location.origin + '/?', '') // Trim URL
       .replace(/\s/g, '') // Trim whitespace
       .replace(/%20/g, '') // Trim escaped whitespace
       .replace(/(,)(\d)/g, '|$2') // Use '|' as a placeholder for ',' in rgb and rgba definitions
-      .split(',') : []; // Create array of values
+      .split(','); // Create array of values
 
     // Replace placeholder '|' with ','
     urlPalette.forEach((swatch, index) => {
@@ -59,8 +59,6 @@ class App extends Component {
     }
 
     window.history.pushState(null, null, window.location.origin + '/?' + this.palette.join(','));
-
-    console.log(this.palette);
   }
 
   render() {

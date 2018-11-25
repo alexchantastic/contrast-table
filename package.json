@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "get-contrast": "^2.0.0",
-    "is-named-css-color": "^1.0.0",
+    "is-css-color-name": "^0.1.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
