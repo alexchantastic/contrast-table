@@ -1,5 +1,15 @@
 {
   "name": "contrast-table",
+  "homepage": "https://alexchantastic.github.io/contrast-table",
+  "bugs": {
+    "url": "https://github.com/alexchantastic/contrast-table/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexchantastic/contrast-table.git"
+  },
+  "author": "Alex Chan",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,8 +23,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -26,6 +38,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.10.0"
   }
 }
