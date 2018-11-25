@@ -30,4 +30,4 @@ Generate a table to help you determine if your color palette is accessible as pe
 
 ## License
 
-Code released under the MIT License.
+Code released under the [MIT License](https://github.com/alexchantastic/contrast-table/blob/master/LICENSE).
