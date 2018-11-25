@@ -58,7 +58,7 @@ class App extends Component {
       ];
     }
 
-    window.history.pushState(null, null, window.location.origin + window.location.pathname + '?' + this.palette.join(','));
+    window.history.replaceState(null, null, window.location.origin + window.location.pathname + '?' + this.palette.join(','));
   }
 
   render() {
