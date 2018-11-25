@@ -1,44 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :rainbow: contrast-table
 
-## Available Scripts
+Generate a table to help you determine if your color palette is accessible as per [WCAG 2.0](https://www.w3.org/TR/WCAG20/).
 
-In the project directory, you can run:
+![Screenshot](https://user-images.githubusercontent.com/604167/48976255-13282400-f039-11e8-88d4-015eff77aa8b.png)
 
-### `npm start`
+## How to use
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Navigate to [https://alexchantastic.github.io/contrast-table/](https://alexchantastic.github.io/contrast-table/)
+2. When you first load the app, an example color palette will be loaded for you
+3. To change the color palette used, append your comma separated color palette to the URL starting with a `?`
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+   e.g., [https://alexchantastic.github.io/contrast-table/?#000,#fff](https://alexchantastic.github.io/contrast-table/?#000,#fff)
 
-### `npm test`
+4. Each cell represents the combination of the column header (foreground color) and the row header (background color) and displays:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   * :white_check_mark: passes
+   * :x: fails
+   * Contrast ratio
+   * Score (AA / AAA / F)
 
-### `npm run build`
+### Accepted color values
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Value type        | Example                        |
+| ----------------- | ------------------------------ |
+| Hex               | `#b4d455`                      |
+| Named             | `rebeccapurple`                |
+| rgb               | `rgb(255, 255, 255)`           |
+| rgba              | `rgba(255, 255, 255, 0.5)`     |
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Code released under the MIT License.
