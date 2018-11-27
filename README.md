@@ -1,6 +1,6 @@
 # :rainbow: contrast-table
 
-Generate a table to help you determine if your color palette is accessible as per [WCAG 2.0](https://www.w3.org/TR/WCAG20/).
+Generate a table to help you determine if your color palette is accessible as per [WCAG 2.1](https://www.w3.org/TR/WCAG21/).
 
 ![Screenshot](https://user-images.githubusercontent.com/604167/48976255-13282400-f039-11e8-88d4-015eff77aa8b.png)
 
