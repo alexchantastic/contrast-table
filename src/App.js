@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import color from 'rgb';
 import isCSSColorName from 'is-css-color-name';
 
-import Table from './components/Table/Table';
+import Table from './components/table/table';
 
 class App extends Component {
   cleanPalette = (palette) => {
