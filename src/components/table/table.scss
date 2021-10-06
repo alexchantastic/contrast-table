@@ -8,9 +8,7 @@
     z-index: 2;
     padding: 16px;
     font-weight: normal;
-    box-shadow:
-      inset 0 -1px 0 0 #ccc,
-      inset -1px 0 0 0 #eee;
+    box-shadow: inset 0 -1px 0 0 #ccc, inset -1px 0 0 0 #eee;
     background: #fff;
 
     &--empty {
@@ -20,9 +18,7 @@
       z-index: 3;
       width: 160px;
       height: 96px;
-      box-shadow:
-        inset 0 -1px 0 0 #ccc,
-        inset -1px 0 0 0 #ccc;
+      box-shadow: inset 0 -1px 0 0 #ccc, inset -1px 0 0 0 #ccc;
     }
   }
 
@@ -31,16 +27,12 @@
     left: 0;
     z-index: 1;
     padding: 16px;
-    box-shadow:
-      inset 0 -1px 0 0 #eee,
-      inset -1px 0 0 0 #ccc;
+    box-shadow: inset 0 -1px 0 0 #eee, inset -1px 0 0 0 #ccc;
     background: #fff;
   }
 
   &__cell {
-    box-shadow:
-      inset 0 -1px 0 0 #eee,
-      inset -1px 0 0 0 #eee;
+    box-shadow: inset 0 -1px 0 0 #eee, inset -1px 0 0 0 #eee;
 
     &:hover {
       background: #f3f3f3;
