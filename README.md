@@ -2,7 +2,7 @@
 
 Generate a table to help you determine if your color palette is accessible as per [WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
 
-![Screenshot](https://user-images.githubusercontent.com/604167/48976255-13282400-f039-11e8-88d4-015eff77aa8b.png)
+![Screenshot](https://user-images.githubusercontent.com/604167/136125999-e7de377c-9885-479a-b2ff-6e5eeba90377.png)
 
 ## How to use
 
