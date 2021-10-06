@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Swatch from '../Swatch/Swatch';
-import ContrastSwatch from '../ContrastSwatch/ContrastSwatch';
+import Swatch from '../swatch/swatch';
+import ContrastSwatch from '../contrast-swatch/contrast-swatch';
 
-import './Table.scss';
+import './table.scss';
 
 const Table = ({ palette }) => (
   <table className="table">
