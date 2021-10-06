@@ -1,6 +1,6 @@
 # :rainbow: contrast-table
 
-Generate a table to help you determine if your color palette is accessible as per [WCAG 2.1](https://www.w3.org/TR/WCAG21/).
+Generate a table to help you determine if your color palette is accessible as per [WCAG 2.1](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
 
 ![Screenshot](https://user-images.githubusercontent.com/604167/48976255-13282400-f039-11e8-88d4-015eff77aa8b.png)
 
@@ -14,8 +14,10 @@ Generate a table to help you determine if your color palette is accessible as pe
 
 4. Each cell represents the combination of the column header (foreground color) and the row header (background color) and displays:
 
-   * :white_check_mark: passes
-   * :x: fails
+   * :abcd: :white_check_mark: body text passes
+   * :abcd: :x: body text fails
+   * :capital_abcd: :white_check_mark: large-scale text passes
+   * :capital_abcd: :x: large-scale text fails
    * Contrast ratio
    * Score (AA / AAA / F)
 
