@@ -10,17 +10,20 @@ const ContrastSwatch = ({ foregroundColor, backgroundColor }) => {
   const ratio = contrast.ratio(foregroundColor, backgroundColor).toFixed(2);
   const score = contrast.score(foregroundColor, backgroundColor);
 
+  const bodyTextPass = ratio >= minBodyTextRatio;
+  const largeTextPass = ratio >= minLargeTextRatio;
+
   return (
     <div className="contrast-swatch">
       <div className="contrast-swatch__grades">
-        <div className="contrast-swatch__grade">
+        <div className="contrast-swatch__grade" title={`Body text ${bodyTextPass ? 'pass' : 'fail'}`}>
           <span className="contrast-swatch__grade-label">🔡</span>
-          {ratio >= minBodyTextRatio ? '✅' : '❌'}
+          {bodyTextPass ? '✅' : '❌'}
         </div>
 
-        <div className="contrast-swatch__grade">
+        <div className="contrast-swatch__grade" title={`Large-scale text ${largeTextPass ? 'pass' : 'fail'}`}>
           <span className="contrast-swatch__grade-label">🔠</span>
-          {ratio >= minLargeTextRatio ? '✅' : '❌'}
+          {largeTextPass ? '✅' : '❌'}
         </div>
       </div>
 
