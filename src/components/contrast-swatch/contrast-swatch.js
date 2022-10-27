@@ -17,13 +17,19 @@ const ContrastSwatch = ({ foregroundColor, backgroundColor }) => {
     <div className="contrast-swatch">
       <div className="contrast-swatch__grades">
         <div className="contrast-swatch__grade" title={`Body text ${bodyTextPass ? 'pass' : 'fail'}`}>
-          <span className="contrast-swatch__grade-label">🔡</span>
-          {bodyTextPass ? '✅' : '❌'}
+          <Emoji character="🔡" label="Small text" className="contrast-swatch__grade-label" />
+          {bodyTextPass ?
+            <Emoji character="✅" label="Pass" /> :
+            <Emoji character="❌" label="Fail" />
+          }
         </div>
 
         <div className="contrast-swatch__grade" title={`Large-scale text ${largeTextPass ? 'pass' : 'fail'}`}>
-          <span className="contrast-swatch__grade-label">🔠</span>
-          {largeTextPass ? '✅' : '❌'}
+          <Emoji character="🔠" label="Large text" className="contrast-swatch__grade-label" />
+          {largeTextPass ?
+            <Emoji character="✅" label="Pass" /> :
+            <Emoji character="❌" label="Fail" />
+          }
         </div>
       </div>
 
@@ -37,5 +43,9 @@ const ContrastSwatch = ({ foregroundColor, backgroundColor }) => {
     </div>
   );
 };
+
+const Emoji = ({character, label, ...rest}) => (
+  <span role="img" aria-label={label} {...rest}>{character}</span>
+)
 
 export default ContrastSwatch;

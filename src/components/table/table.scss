@@ -9,9 +9,16 @@
     padding: 16px;
     font-weight: normal;
     box-shadow:
-      inset 0 -1px 0 0 #ccc,
+      inset 0 -1px 0 0 #eee,
       inset -1px 0 0 0 #eee;
     background: #fff;
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow:
+        inset 0 -1px 0 0 #444,
+        inset -1px 0 0 0 #444;
+      background: #222;
+    }
 
     &--empty {
       position: fixed;
@@ -21,8 +28,14 @@
       width: 160px;
       height: 96px;
       box-shadow:
-        inset 0 -1px 0 0 #ccc,
-        inset -1px 0 0 0 #ccc;
+        inset 0 -1px 0 0 #eee,
+        inset -1px 0 0 0 #eee;
+      
+      @media (prefers-color-scheme: dark) {
+        box-shadow:
+          inset 0 -1px 0 0 #444,
+          inset -1px 0 0 0 #444;
+      }
     }
   }
 
@@ -33,8 +46,15 @@
     padding: 16px;
     box-shadow:
       inset 0 -1px 0 0 #eee,
-      inset -1px 0 0 0 #ccc;
+      inset -1px 0 0 0 #eee;
     background: #fff;
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow:
+        inset 0 -1px 0 0 #444,
+        inset -1px 0 0 0 #444;
+      background: #222;
+    }
   }
 
   &__cell {
@@ -44,6 +64,16 @@
 
     &:hover {
       background: #f3f3f3;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow:
+        inset 0 -1px 0 0 #444,
+        inset -1px 0 0 0 #444;
+
+      &:hover {
+        background: #333;
+      }
     }
   }
 }
